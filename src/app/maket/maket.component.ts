@@ -16,7 +16,8 @@ import 'grapesjs-blocks-basic';
 export class MaketComponent implements OnInit, AfterViewInit {
   editor: any;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   ngAfterViewInit(): void {
     this.editor = grapesjs.init({
@@ -35,7 +36,7 @@ export class MaketComponent implements OnInit, AfterViewInit {
             additional: {
               label: 'Additional',
               category: 'Extra',
-              attributes: { class: 'gjs-block-section' },
+              attributes: {class: 'gjs-block-section'},
               content: {
                 type: 'section',
                 content: `<h1>Additional Block</h1>`
@@ -54,11 +55,15 @@ export class MaketComponent implements OnInit, AfterViewInit {
     this.createMenu();
   }
 
+  //Добавил
+
   createMenu(): void {
     const panelTop = document.createElement('div');
     panelTop.className = 'panel__top';
     document.body.appendChild(panelTop);
 
+
+    //Добавляем кнопку сохранения
     const btnSave = document.createElement('button');
     btnSave.id = 'btn-save';
     btnSave.className = 'btn-save';
@@ -72,14 +77,15 @@ export class MaketComponent implements OnInit, AfterViewInit {
     });
     panelTop.appendChild(btnSave);
 
+    //Добавляем кнопку для добавления кнопок на макет
     const btnAddButton = document.createElement('button');
     btnAddButton.id = 'btn-add-button';
     btnAddButton.className = 'btn-add-button';
-    btnAddButton.textContent = 'Add Button';
+    btnAddButton.textContent = 'Создать кнопку';
     btnAddButton.addEventListener('click', () => {
       const button = this.editor.DomComponents.addComponent({
         tagName: 'button',
-        content: 'Click me',
+        content: 'Кнопка',
         style: {}
       });
       const selectedComponent = this.editor.getSelected();
