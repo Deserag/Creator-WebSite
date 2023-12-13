@@ -5,18 +5,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.min.js"></script>
 </head>
 <body>
+<div class="left-field">
+  <button class="main-page-button" (click)="scrollTo('osnov_str')">Основная страница</button>
+  <button class="main-page-button"(click)="scrollTo('str_dannix')">Страница информации</button>
+  <button class="main-page-button"(click)="scrollTo('geo_location')">Геолокация</button>
+  <button class="main-page-button"(click)="scrollTo('form')">Страница информации</button>
+  <button class="main-page-button"(click)="scrollTo('companion')">Страница информации</button>
+</div>
+<div id="osnov_str">
+<div class ="granish">
 <header>
   <button class="round-button red" (click)="changeInputColor('red')"></button>
   <button class="round-button blue" (click)="changeInputColor('blue')"></button>
   <button class="round-button green" (click)="changeInputColor('green')"></button>
   <button class="round-button orange" (click)="changeInputColor('orange')"></button>
   <button class="round-button yellow" (click)="changeInputColor('yellow')"></button>
-  <button class="round-button greenyellow" (click)="changeInputColor('greenyellow')"></button><nav class="header-nav">
+  <button class="round-button greenyellow" (click)="changeInputColor('greenyellow')"></button>
+  <button class="round-button black" (click)="changeInputColor('black')"></button>
+  <nav class="header-nav">
   <ul>
-    <li><button routerLink="osnov_str" [ngStyle]="{ 'background-color': ChangeColor }">Основная страница</button></li>
-    <li><button routerLink="help" [ngStyle]="{ 'background-color': ChangeColor }">Поддержка</button></li>
-    <li><button routerLink="connection" [ngStyle]="{ 'background-color': ChangeColor }">Связь</button></li>
-    <li><button routerLink="function" [ngStyle]="{ 'background-color': ChangeColor }">Функционал</button></li>
+    <li><button routerLink="osnov_str" [ngStyle]="{ 'background-color': ChangeColor_osnov }">Основная страница</button></li>
+    <li><button routerLink="help" [ngStyle]="{ 'background-color': ChangeColor_osnov }">Поддержка</button></li>
+    <li><button routerLink="connection" [ngStyle]="{ 'background-color': ChangeColor_osnov }">Связь</button></li>
+    <li><button routerLink="function" [ngStyle]="{ 'background-color': ChangeColor_osnov }">Функционал</button></li>
   </ul>
 </nav>
 </header>
@@ -24,11 +35,11 @@
   <div>
     <form>
       <nav class="znach_button">
-        <input type="text" class="size-name" id="name_maket" name="" placeholder="Введите название макета" [(ngModel)]="NameMaket" [ngClass]="ChangeColor + '-field'" style="margin-bottom: 15px;" />
+        <input type="text" class="size-name" id="name_maket" [name]="NameMaket" placeholder="Введите название для макета" [(ngModel)]="NameMaket" [ngClass]="ChangeColor_osnov + '-field'" style="margin-bottom: 5px;" />
       </nav>
-      <textarea type="text" class="size-opisania" id="text_opisania" name="" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor + '-field'"></textarea>
+      <textarea type="text" class="size-opisania" id="text_opisania" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_osnov + '-field'"></textarea>
     </form>
-    <textarea type="text" class="information" id="contact_dannie" name="" placeholder="Контактные данные" [(ngModel)]="ContactDannie" [ngClass]="ChangeColor + '-field'"></textarea>
+    <textarea type="text" class="information" id="contact_dannie" [name]="ContactDannie" placeholder="Контактные данные" [(ngModel)]="ContactDannie" [ngClass]="ChangeColor_osnov + '-field'"></textarea>
   </div>
   <section id="size_okna"></section>
   <section id="contact"></section>
@@ -40,5 +51,152 @@
     document.getElementById('content').style.backgroundColor = color;
   }
 </script>
+</div>
+</div>
+
+<div id="str_dannix">
+<div class ="granish">
+  <header>
+    <button class="round-button red" (click)="changeInputColor_dannie('red')"></button>
+    <button class="round-button blue" (click)="changeInputColor_dannie('blue')"></button>
+    <button class="round-button green" (click)="changeInputColor_dannie('green')"></button>
+    <button class="round-button orange" (click)="changeInputColor_dannie('orange')"></button>
+    <button class="round-button yellow" (click)="changeInputColor_dannie('yellow')"></button>
+    <button class="round-button greenyellow" (click)="changeInputColor_dannie('greenyellow')"></button><nav class="header-nav">
+    <ul>
+      <li><button routerLink="osnov_str" [ngStyle]="{ 'background-color': ChangeColor_dannie }">Основная страница</button></li>
+      <li><button routerLink="help" [ngStyle]="{ 'background-color': ChangeColor_dannie }">Поддержка</button></li>
+      <li><button routerLink="connection" [ngStyle]="{ 'background-color': ChangeColor_dannie }">Связь</button></li>
+      <li><button routerLink="function" [ngStyle]="{ 'background-color': ChangeColor_dannie }">Функционал</button></li>
+    </ul>
+  </nav>
+  </header>
+  <div id="content" [ngStyle]="{'background-color': backgroundColor}">
+    <div>
+      <form>
+        <nav class="znach_button">
+          <input type="text" class="size-name" id="name_maket_dannix" [name]="NameMaket" placeholder="Введите название для макета" [(ngModel)]="NameMaket" [ngClass]="ChangeColor_dannie + '-field'" style="margin-bottom: 5px;" />
+        </nav>
+        <textarea type="text" class="size-opisania" id="text_opisania_dannix" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+      </form>
+      <textarea type="text" class="information" id="contact_dannie_dannix" [name]="ContactDannie" placeholder="Контактные данные" [(ngModel)]="ContactDannie" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+    </div>
+  </div>
+  <script>
+    function changeBackgroundColor(color) {
+      document.getElementById('content').style.backgroundColor = color;
+    }
+  </script>
+</div>
+</div>
+
+<div id="geo_location">
+  <div class ="granish">
+    <header>
+      <button class="round-button red" (click)="changeInputColor_geo_location('red')"></button>
+      <button class="round-button blue" (click)="changeInputColor_geo_location('blue')"></button>
+      <button class="round-button green" (click)="changeInputColor_geo_location('green')"></button>
+      <button class="round-button orange" (click)="changeInputColor_geo_location('orange')"></button>
+      <button class="round-button yellow" (click)="changeInputColor_geo_location('yellow')"></button>
+      <button class="round-button greenyellow" (click)="changeInputColor_geo_location('greenyellow')"></button><nav class="header-nav">
+      <ul>
+        <li><button routerLink="osnov_str" [ngStyle]="{ 'background-color': ChangeColor_geo_location }">Основная страница</button></li>
+        <li><button routerLink="help" [ngStyle]="{ 'background-color': ChangeColor_geo_location }">Поддержка</button></li>
+        <li><button routerLink="connection" [ngStyle]="{ 'background-color': ChangeColor_geo_location }">Связь</button></li>
+        <li><button routerLink="function" [ngStyle]="{ 'background-color': ChangeColor_geo_location }">Функционал</button></li>
+      </ul>
+    </nav>
+    </header>
+    <div id="content" [ngStyle]="{'background-color': backgroundColor}">
+      <div>
+        <form>
+          <nav class="znach_button">
+            <input type="text" class="size-name" id="name_maket_geo" [name]="NameMaket" placeholder="Введите название для макета" [(ngModel)]="NameMaket" [ngClass]="ChangeColor_geo_location + '-field'" style="margin-bottom: 5px;" />
+          </nav>
+          <textarea type="text" class="size-opisania" id="text_opisania_geo" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+        </form>
+        <textarea type="text" class="information" id="contact_dannie_geo" [name]="ContactDannie" placeholder="Контактные данные" [(ngModel)]="ContactDannie" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+      </div>
+    </div>
+    <script>
+      function changeBackgroundColor(color) {
+        document.getElementById('content').style.backgroundColor = color;
+      }
+    </script>
+  </div>
+</div>
+
+<div id="form">
+  <div class ="granish">
+    <header>
+      <button class="round-button red" (click)="changeInputColor_form('red')"></button>
+      <button class="round-button blue" (click)="changeInputColor_form('blue')"></button>
+      <button class="round-button green" (click)="changeInputColor_form('green')"></button>
+      <button class="round-button orange" (click)="changeInputColor_form('orange')"></button>
+      <button class="round-button yellow" (click)="changeInputColor_form('yellow')"></button>
+      <button class="round-button greenyellow" (click)="changeInputColor_form('greenyellow')"></button><nav class="header-nav">
+      <ul>
+        <li><button routerLink="osnov_str" [ngStyle]="{ 'background-color': ChangeColor_form }">Основная страница</button></li>
+        <li><button routerLink="help" [ngStyle]="{ 'background-color': ChangeColor_form }">Поддержка</button></li>
+        <li><button routerLink="connection" [ngStyle]="{ 'background-color': ChangeColor_form }">Связь</button></li>
+        <li><button routerLink="function" [ngStyle]="{ 'background-color': ChangeColor_form }">Функционал</button></li>
+      </ul>
+    </nav>
+    </header>
+    <div id="content" [ngStyle]="{'background-color': backgroundColor}">
+      <div>
+        <form>
+          <nav class="znach_button">
+            <input type="text" class="size-name" id="name_maket_form" [name]="NameMaket" placeholder="Введите название для макета" [(ngModel)]="NameMaket" [ngClass]="ChangeColor_form + '-field'" style="margin-bottom: 5px;" />
+          </nav>
+          <textarea type="text" class="size-opisania" id="text_opisania_form" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_form + '-field'"></textarea>
+        </form>
+        <textarea type="text" class="information" id="contact_dannie_form" [name]="ContactDannie" placeholder="Контактные данные" [(ngModel)]="ContactDannie" [ngClass]="ChangeColor_form + '-field'"></textarea>
+      </div>
+    </div>
+    <script>
+      function changeBackgroundColor(color) {
+        document.getElementById('content').style.backgroundColor = color;
+      }
+    </script>
+  </div>
+</div>
+
+<div id="companion">
+  <div class ="granish">companion
+    <header>
+      <button class="round-button red" (click)="changeInputColor_companion('red')"></button>
+      <button class="round-button blue" (click)="changeInputColor_companion('blue')"></button>
+      <button class="round-button green" (click)="changeInputColor_companion('green')"></button>
+      <button class="round-button orange" (click)="changeInputColor_companion('orange')"></button>
+      <button class="round-button yellow" (click)="changeInputColor_companion('yellow')"></button>
+      <button class="round-button greenyellow" (click)="changeInputColor_companion('greenyellow')"></button><nav class="header-nav">
+      <ul>
+        <li><button routerLink="osnov_str" [ngStyle]="{ 'background-color': ChangeColor_compation }">Основная страница</button></li>
+        <li><button routerLink="help" [ngStyle]="{ 'background-color': ChangeColor_compation }">Поддержка</button></li>
+        <li><button routerLink="connection" [ngStyle]="{ 'background-color': ChangeColor_compation }">Связь</button></li>
+        <li><button routerLink="function" [ngStyle]="{ 'background-color': ChangeColor_compation}">Функционал</button></li>
+      </ul>
+    </nav>
+    </header>
+    <div id="content" [ngStyle]="{'background-color': backgroundColor}">
+      <div>
+        <form>
+          <nav class="znach_button">
+            <input type="text" class="size-name" id="name_maket_companion" [name]="NameMaket" placeholder="Введите название для макета" [(ngModel)]="NameMaket" [ngClass]="ChangeColor_compation + '-field'" style="margin-bottom: 5px;" />
+          </nav>
+          <textarea type="text" class="size-opisania" id="text_opisania_companion" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_compation + '-field'"></textarea>
+        </form>
+        <textarea type="text" class="information" id="contact_dannie_companion" [name]="ContactDannie" placeholder="Контактные данные" [(ngModel)]="ContactDannie" [ngClass]="ChangeColor_compation + '-field'"></textarea>
+      </div>
+    </div>
+    <script>
+      function changeBackgroundColor(color) {
+        document.getElementById('content').style.backgroundColor = color;
+      }
+    </script>
+  </div>
+</div>
+
 </body>
 </html>

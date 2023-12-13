@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .red {
   background-color: red;
 }
@@ -19,3 +20,26 @@ div {
   color: white;
   text-align: center;
 }
+=======
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+div {
+  width: 100vw;
+  height: 100vw;
+  color: white;
+  text-align: center;
+}
+>>>>>>> github/master

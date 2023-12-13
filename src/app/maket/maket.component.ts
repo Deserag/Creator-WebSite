@@ -5,6 +5,7 @@ import 'grapesjs-lory-slider';
 import 'grapesjs-custom-code';
 import 'grapesjs-tabs';
 import 'grapesjs-blocks-basic';
+import 'grapesjs-preset-webpage'; // Добавлен импорт плагина
 
 @Component({
   selector: 'app-maket',
@@ -23,13 +24,26 @@ export class MaketComponent implements OnInit, AfterViewInit {
     this.editor = grapesjs.init({
       container: '#gjs',
       plugins: [
-        'gjs-preset-webpage',
+        'gjs-preset-webpage', // Добавлен плагин
         'gjs-blocks-basic',
         'gjs-plugin-export',
         'gjs-lory-slider',
         'gjs-custom-code',
         'gjs-tabs'
       ],
+<<<<<<< HEAD
+      blockManager: {
+        appendTo: '.myblocks',
+        blocks: [
+          {
+            id: 'image',
+            label: 'Image',
+            media: `<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z" />
+      </svg>`,
+            content: { type: 'image' },
+            activate: true
+=======
       pluginsOpts: {
         'gjs-blocks-basic': {
           blocks: {
@@ -42,8 +56,9 @@ export class MaketComponent implements OnInit, AfterViewInit {
                 content: `<h1>Additional Block</h1>`
               }
             }
+>>>>>>> github/master
           }
-        }
+        ]
       },
       canvas: {
         styles: [
@@ -51,6 +66,8 @@ export class MaketComponent implements OnInit, AfterViewInit {
         ]
       }
     });
+<<<<<<< HEAD
+=======
 
     this.createMenu();
   }
@@ -96,5 +113,6 @@ export class MaketComponent implements OnInit, AfterViewInit {
       }
     });
     panelTop.appendChild(btnAddButton);
+>>>>>>> github/master
   }
 }
