@@ -1,132 +1,30 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GrapesJS Editor</title>
-  <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+  <head>
+    <title>GrapesJS Editor</title>
+    <title>GrapesJS Editor</title>
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+  </head>
 </head>
 <body>
-<div id="gjs"></div>
-<div class="panel__blocks"></div> <!-- Добавить эту строку -->
-<div class="panel__basic-blocks"></div>
-<script src="https://unpkg.com/grapesjs"></script>
-<script src="https://unpkg.com/grapesjs-preset-webpage"></script>
-<script src="https://unpkg.com/grapesjs-blocks-basic"></script>
-<script src="https://unpkg.com/grapesjs-plugin-export"></script>
-<script src="https://unpkg.com/grapesjs-lory-slider"></script>
-<script src="https://unpkg.com/grapesjs-custom-code"></script>
-<script src="https://unpkg.com/grapesjs-tabs"></script>
-
-<script>
-  const editor = grapesjs.init({
-    container: '#gjs',
-    plugins: ['gjs-blocks-basic'],
-    pluginsOpts: {
-      'gjs-blocks-basic': {
-        blocks: {
-          // ...
-          'image-block': {
-            label: 'Изображение',
-            content: '<img src="path/to/your/image.jpg">'
-          }
-        }
-      }
-    },
-    panels: {
-      defaults: [
-        {
-          id: 'basic-blocks',
-          el: '.panel__basic-blocks',
-          buttons: [
-            {
-              id: 'h1-block',
-              label: 'Заголовок H1',
-              command: 'add-block',
-              options: { block: 'h1-block' }
-            },
-            {
-              id: 'h2-block',
-              label: 'Заголовок H2',
-              command: 'add-block',
-              options: { block: 'h2-block' }
-            },
-            {
-              id: 'paragraph-block',
-              label: 'Параграф',
-              command: 'add-block',
-              options: { block: 'paragraph-block' }
-            },
-            {
-              id: 'image-block',
-              label: 'Изображение',
-              command: 'add-block',
-              options: { block: 'image-block' }
-            },
-            {
-              id: 'button-block',
-              label: 'Кнопка',
-              command: 'add-block',
-              options: { block: 'button-block' }
-            },
-            {
-              id: 'unordered-list-block',
-              label: 'Маркированный список',
-              command: 'add-block',
-              options: { block: 'unordered-list-block' }
-            },
-            {
-              id: 'ordered-list-block',
-              label: 'Нумерованный список',
-              command: 'add-block',
-              options: { block: 'ordered-list-block' }
-            },
-            {
-              id: 'table-block',
-              label: 'Таблица',
-              command: 'add-block',
-              options: { block: 'table-block' }
-            }
-          ]
-        }
-      ],
-      // Добавляем панель "blocks"
-      blocks: {
-        id: 'blocks',
-        el: '.panel__blocks',
-        buttons: [
-          {
-            id: 'open-blocks',
-            label: 'Blocks',
-            command: 'open-blocks',
-            active: true,
-            togglable: false
-          }
-        ]
-      }
-    }
-  });
-</script>
-</body>
-</html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-  <title>GrapesJS Editor</title>
-  <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
-</head>
 <body>
 <div id="gjs"></div>
 <script src="https://unpkg.com/grapesjs"></script>
+<script src="https://unpkg.com/grapesjs"></script>
+<script src="https://unpkg.com/grapesjs-preset-webpage"></script>
 <script src="https://unpkg.com/grapesjs-preset-webpage"></script>
 <script src="https://unpkg.com/grapesjs-blocks-basic"></script>
+<script src="https://unpkg.com/grapesjs-blocks-basic"></script>
+<script src="https://unpkg.com/grapesjs-plugin-export"></script>
 <script src="https://unpkg.com/grapesjs-plugin-export"></script>
 <script src="https://unpkg.com/grapesjs-lory-slider"></script>
+<script src="https://unpkg.com/grapesjs-lory-slider"></script>
+<script src="https://unpkg.com/grapesjs-custom-code"></script>
 <script src="https://unpkg.com/grapesjs-custom-code"></script>
 <script src="https://unpkg.com/grapesjs-tabs"></script>
-
-<script>
-</script>
+<script src="https://unpkg.com/grapesjs-tabs"></script>
+</body>
 </body>
 </html>
->>>>>>> github/master

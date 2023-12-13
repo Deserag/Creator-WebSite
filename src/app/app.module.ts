@@ -13,7 +13,7 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { Routes } from '@angular/router';
 import {FormsModule} from "@angular/forms";
 import {MaketComponent} from "./maket/maket.component";
-//подключаем необходимые ресурсы, как из файлов программы, так и из фрейморвка
+
 
 const routes: Routes = [
   { path: 'editor', component: MaketComponent }
