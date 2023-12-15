@@ -91,12 +91,13 @@
     <div id="content" [ngStyle]="{'background-color': backgroundColor}">
       <div>
         <form class="polia_dannix">
-          <textarea type="text" class="size-opisania" id="text_opisania_first" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
-          <textarea type="text" class="size-opisania" id="text_opisania_second" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
-          <textarea type="text" class="size-opisania" id="text_opisania_third" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
-          <textarea type="text" class="size-opisania" id="text_opisania_fourth" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+
+          <textarea type="text" class="size-opisania" id="text_opisania_first" [name]="dannie_info[0]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[0]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+          <textarea type="text" class="size-opisania" id="text_opisania_second" [name]="dannie_info[1]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[1]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+          <textarea type="text" class="size-opisania" id="text_opisania_third" [name]="dannie_info[2]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[2]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+          <textarea type="text" class="size-opisania" id="text_opisania_fourth" [name]="dannie_info[3]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[3]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+          <textarea type="text" class="size-opisania" id="text_opisania_fifth" [name]="dannie_info[4]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[4]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
         </form>
-        <textarea type="text" class="information" id="contact_dannie_geo" [name]="ContactDannie" placeholder="Контактные данные" [(ngModel)]="ContactDannie" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
       </div>
     </div>
     <script>
@@ -116,12 +117,6 @@
       <button class="round-button orange" (click)="changeInputColor_form('orange')"></button>
       <button class="round-button yellow" (click)="changeInputColor_form('yellow')"></button>
       <button class="round-button greenyellow" (click)="changeInputColor_form('greenyellow')"></button><nav class="header-nav">
-      <ul>
-        <li><button routerLink="osnov_str" [ngStyle]="{ 'background-color': ChangeColor_form }">Основная страница</button></li>
-        <li><button routerLink="help" [ngStyle]="{ 'background-color': ChangeColor_form }">Поддержка</button></li>
-        <li><button routerLink="connection" [ngStyle]="{ 'background-color': ChangeColor_form }">Связь</button></li>
-        <li><button routerLink="function" [ngStyle]="{ 'background-color': ChangeColor_form }">Функционал</button></li>
-      </ul>
     </nav>
     </header>
     <div id="content" [ngStyle]="{'background-color': backgroundColor}">
@@ -152,12 +147,6 @@
       <button class="round-button orange" (click)="changeInputColor_companion('orange')"></button>
       <button class="round-button yellow" (click)="changeInputColor_companion('yellow')"></button>
       <button class="round-button greenyellow" (click)="changeInputColor_companion('greenyellow')"></button><nav class="header-nav">
-      <ul>
-        <li><button routerLink="osnov_str" [ngStyle]="{ 'background-color': ChangeColor_compation }">Основная страница</button></li>
-        <li><button routerLink="help" [ngStyle]="{ 'background-color': ChangeColor_compation }">Поддержка</button></li>
-        <li><button routerLink="connection" [ngStyle]="{ 'background-color': ChangeColor_compation }">Связь</button></li>
-        <li><button routerLink="function" [ngStyle]="{ 'background-color': ChangeColor_compation}">Функционал</button></li>
-      </ul>
     </nav>
     </header>
     <div id="content" [ngStyle]="{'background-color': backgroundColor}">

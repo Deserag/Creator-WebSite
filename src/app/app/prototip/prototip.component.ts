@@ -26,6 +26,14 @@ export class PrototipComponent implements OnInit{
   ChangeColor_form: string = '';
   ChangeColor_compation: string = '';
   size_web: string ="";
+  color: string = "";
+  dannie_info_1: string = '';
+
+  dannie_info: string[] = [];
+
+  geo_location: string[] = [];
+
+  zakluchenie: string[] = [];
 
 
   constructor() { }
@@ -43,7 +51,23 @@ export class PrototipComponent implements OnInit{
       const data = new Uint8Array(xhr.response);
       const workbook = XLSX.read(data, { type: 'array' });
       const worksheet = workbook.Sheets["data"];
+      this.backgroundColor = worksheet['A1'].v;
       this.NameMaket = worksheet['B3'].v;
+      this.TextOpisania = worksheet['C3'].v;
+      this.ContactDannie = worksheet['D3'].v;
+      //данные для второй страницы
+      this.dannie_info[0] = worksheet['F3'].v;
+      this.dannie_info[1] = worksheet['G3'].v;
+      this.dannie_info[2] = worksheet['H3'].v;
+      this.dannie_info[3] = worksheet['I3'].v;
+      this.dannie_info[4] = worksheet['J3'].v;
+      //данные для третьей страницы
+
+      //данные для четвертой страницы
+        
+      //данные для пятой страницы
+
+
       console.log(this.NameMaket);
       //console.log("Подключение произошло")
     };
