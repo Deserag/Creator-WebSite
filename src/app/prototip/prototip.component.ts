@@ -50,22 +50,31 @@ export class PrototipComponent implements OnInit {
       .then(data => {
         const workbook = XLSX.read(data, { type: 'array' });
         const worksheet = workbook.Sheets['data'];
-        this.backgroundColor = worksheet['A1'].v;
+        this.color = worksheet['A3'].v;
         this.NameMaket = worksheet['B3'].v;
         this.TextOpisania = worksheet['C3'].v;
         this.ContactDannie = worksheet['D3'].v;
-        // данные для второй страницы
+
+        // данные для третьей страницы
         this.dannie_info[0] = worksheet['F3'].v;
         this.dannie_info[1] = worksheet['G3'].v;
         this.dannie_info[2] = worksheet['H3'].v;
         this.dannie_info[3] = worksheet['I3'].v;
         this.dannie_info[4] = worksheet['J3'].v;
-        // данные для третьей страницы
 
         // данные для четвертой страницы
+        this.geo_location[0] = worksheet['M3'].v;
+        this.geo_location[1] = worksheet['N3'].v;
+        this.geo_location[2] = worksheet['O3'].v;
+        this.geo_location[3] = worksheet['P3'].v;
+        this.geo_location[4] = worksheet['Q3'].v;
 
         // данные для пятой страницы
-
+        this.zakluchenie[0] = worksheet['R3'].v;
+        this.zakluchenie[1] = worksheet['S3'].v;
+        this.zakluchenie[2] = worksheet['T3'].v;
+        this.zakluchenie[3] = worksheet['U3'].v;
+        this.zakluchenie[4] = worksheet['V3'].v;
         console.log(this.NameMaket);
       })
       .catch(error => {
@@ -99,7 +108,7 @@ export class PrototipComponent implements OnInit {
         const data = new Uint8Array(e.target.result);
         const workbook = XLSX.read(data, { type: 'array' });
         const worksheet = workbook.Sheets['data'];
-        this.backgroundColor = worksheet['A1'].v;
+        this.color = worksheet['A3'].v;
         this.NameMaket = worksheet['B3'].v;
         this.TextOpisania = worksheet['C3'].v;
         this.ContactDannie = worksheet['D3'].v;
@@ -109,11 +118,20 @@ export class PrototipComponent implements OnInit {
         this.dannie_info[2] = worksheet['H3'].v;
         this.dannie_info[3] = worksheet['I3'].v;
         this.dannie_info[4] = worksheet['J3'].v;
-        // данные для третьей страницы
 
         // данные для четвертой страницы
+        this.geo_location[0] = worksheet['M3'].v;
+        this.geo_location[1] = worksheet['N3'].v;
+        this.geo_location[2] = worksheet['O3'].v;
+        this.geo_location[3] = worksheet['P3'].v;
+        this.geo_location[4] = worksheet['Q3'].v;
 
         // данные для пятой страницы
+        this.zakluchenie[0] = worksheet['R3'].v;
+        this.zakluchenie[1] = worksheet['S3'].v;
+        this.zakluchenie[2] = worksheet['T3'].v;
+        this.zakluchenie[3] = worksheet['U3'].v;
+        this.zakluchenie[4] = worksheet['V3'].v;
 
         console.log('Файл успешно загружен и обновлен');
       };
