@@ -24,7 +24,6 @@
   background-color: greenyellow;
   color: white;
 }
-//изменение цвета кругов
 .black {
   background-color: black;
   color: white;
@@ -50,11 +49,13 @@
   color: white;
 }
 
+
 .greenyellow-field {
   background-color: greenyellow;
   color: white;
 }
-//изменение цвета полей на макете
+
+//изменение цвета кругов и блоков
 #content {
   padding: 5px;
   margin: 7.5px;
@@ -70,14 +71,6 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
   width: 100%;
 }
 
@@ -100,13 +93,51 @@ ul {
   width: 100%; // ширина элемента равна ширине родительского контейнера
 }
 
-.granish{// условия для 1 макета
+.granish{// условия для макетов
   border: 1px solid black;
   margin: 5px;
   transform: scale(0.75);
   margin-left: 10vw;
   overflow: auto;
   position: relative;
+
+  .nazvanie_okna_vibora{
+    text-align: center;
+  }
+  .polia_dannix{
+    display: flex;
+
+    textarea{
+      margin: 10px;
+      width: 100px;
+      height: 10vw;
+      resize: vertical;
+      justify-content: space-between;
+
+    }
+  }
+  .podkluch_dannie {//условия для кнопок выбора размеров
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+  .selecting-screen-sizes {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Распределяем кнопки с равным пространством между ними */
+
+    button {
+      margin: 5px; /* Добавляем внешний отступ между кнопками */
+    }
+  }
 
   .size-opisania {//условия для поля описания макета
     width: 45%;
@@ -184,3 +215,73 @@ ul {
   background-color: #003380;
 }
 
+#str_uslovi {
+  .granish {
+    max-width: 1140px;
+    margin: 3px;
+    //transform: scale(0.75);
+    margin-left: 10vw;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+
+    > div {
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 1.5rem;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      > div {
+        padding: 20px;
+
+        h2 {
+          font-size: 12px;
+          font-weight: 500;
+          color: #9CA3AF;
+          margin-bottom: 5px;
+        }
+
+        h1 {
+          font-size: 18px;
+          font-weight: 500;
+          color: #111827;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 16px;
+          color: #9CA3AF;
+          margin-bottom: 15px;
+        }
+
+        a {
+          color: #4F46E5;
+          text-decoration: none;
+          //display: inline-flex;
+          align-items: center;
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            margin-right: 0.65rem;
+          }
+
+          span {
+            padding: 0.25rem;
+            color: #9CA3AF;
+          }
+        }
+      }
+    }
+  }
+}
