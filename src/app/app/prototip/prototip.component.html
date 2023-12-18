@@ -12,33 +12,35 @@
   <button class="main-page-button"(click)="scrollTo('geo_location')">Геолокация</button>
   <button class="main-page-button"(click)="scrollTo('companion')">Заключительная страница</button>
 </div>
+
+
 <div id="str_uslovi">
-<div class ="granish">
-<div id="content1" [ngStyle]="{'background-color': backgroundColor}">
-  <div class = "nazvanie_okna_vibora">
-    <div>Выбор размеров страницы</div>
+  <div class ="granish">
+    <div id="content1" [ngStyle]="{'background-color': backgroundColor}">
+      <div class = "nazvanie_okna_vibora">
+        <div>Выбор размеров страницы</div>
+      </div>
+      <div class="selecting-screen-sizes">
+        <button (click) =" Change_Size_Web('1366x768')">1366x768</button>
+        <button (click) =" Change_Size_Web('1920x1080')">1920x1080</button>
+        <button (click) =" Change_Size_Web('375x667')">375x667</button>
+      </div>
+      <div class = "podkluch_dannie">
+        <button (click)="downloadExcelFile()">Загрузить шаблон</button>
+        <input type="file" (change)="replaceExcelFile($event)" accept=".xlsx, .xls">
+        <button id="replaceFileButton">Ок</button>
+      </div>
+      <section id="size_okna"></section>
+      <section id="contact"></section>
+      <div>
+      </div>
+    </div>
+    <script>
+      function changeBackgroundColor(color) {
+        document.getElementById('content').style.backgroundColor = color;
+      }
+    </script>
   </div>
-  <div class="selecting-screen-sizes">
-    <button (click) =" Change_Size_Web('1366x768')">1366x768</button>
-    <button (click) =" Change_Size_Web('1920x1080')">1920x1080</button>
-    <button (click) =" Change_Size_Web('375x667')">375x667</button>
-  </div>
-  <div class = "podkluch_dannie">
-    <button (click)="downloadExcelFile()">Загрузить шаблон</button>
-    <input type="file" (change)="replaceExcelFile($event)" accept=".xlsx, .xls">
-    <button id="replaceFileButton">Ок</button>
-  </div>
-  <section id="size_okna"></section>
-  <section id="contact"></section>
-  <div>
-  </div>
-</div>
-<script>
-  function changeBackgroundColor(color) {
-    document.getElementById('content').style.backgroundColor = color;
-  }
-</script>
-</div>
 </div>
 
 <div id="osnov_str">
@@ -120,14 +122,8 @@
     </nav>
     </header>
     <div id="content" [ngStyle]="{'background-color': backgroundColor}">
-      <div>
-        <form>
-          <nav class="znach_button">
-            <input type="text" class="size-name" id="name_maket_form" [name]="NameMaket" placeholder="Введите название для макета" [(ngModel)]="NameMaket" [ngClass]="ChangeColor_form + '-field'" style="margin-bottom: 5px;" />
-          </nav>
-          <textarea type="text" class="size-opisania" id="text_opisania_form" [name]="TextOpisania" placeholder="Введите описание страницы" [(ngModel)]="TextOpisania" [ngClass]="ChangeColor_form + '-field'"></textarea>
-        </form>
-        <textarea type="text" class="information" id="contact_dannie_form" [name]="ContactDannie" placeholder="Контактные данные" [(ngModel)]="ContactDannie" [ngClass]="ChangeColor_form + '-field'"></textarea>
+      <div class = "granish">
+
       </div>
     </div>
     <script>
