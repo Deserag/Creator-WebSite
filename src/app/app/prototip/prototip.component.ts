@@ -31,7 +31,8 @@ export class PrototipComponent implements OnInit {
 
   dannie_info: string[] = [];
 
-  geo_location: string[] = [];
+  contact_dannie: string[] = [];
+
 
   zakluchenie: string[] = [];
 
@@ -65,11 +66,11 @@ export class PrototipComponent implements OnInit {
         this.dannie_info[4] = worksheet['J3'].v;
 
         // данные для четвертой страницы
-        this.geo_location[0] = worksheet['M3'].v;
-        this.geo_location[1] = worksheet['N3'].v;
-        this.geo_location[2] = worksheet['O3'].v;
-        this.geo_location[3] = worksheet['P3'].v;
-        this.geo_location[4] = worksheet['Q3'].v;
+        this.contact_dannie[0] = worksheet['M3'].v;
+        this.contact_dannie[1] = worksheet['N3'].v;
+        this.contact_dannie[2] = worksheet['O3'].v;
+        this.contact_dannie[3] = worksheet['P3'].v;
+        this.contact_dannie[4] = worksheet['Q3'].v;
 
         // данные для пятой страницы
         this.zakluchenie[0] = worksheet['R3'].v;
@@ -122,11 +123,11 @@ export class PrototipComponent implements OnInit {
         this.dannie_info[4] = worksheet['J3'].v;
 
         // данные для четвертой страницы
-        this.geo_location[0] = worksheet['M3'].v;
-        this.geo_location[1] = worksheet['N3'].v;
-        this.geo_location[2] = worksheet['O3'].v;
-        this.geo_location[3] = worksheet['P3'].v;
-        this.geo_location[4] = worksheet['Q3'].v;
+        this.contact_dannie[0] = worksheet['M3'].v;
+        this.contact_dannie[1] = worksheet['N3'].v;
+        this.contact_dannie[2] = worksheet['O3'].v;
+        this.contact_dannie[3] = worksheet['P3'].v;
+        this.contact_dannie[4] = worksheet['Q3'].v;
 
         // данные для пятой страницы
         this.zakluchenie[0] = worksheet['R3'].v;

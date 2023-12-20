@@ -202,9 +202,9 @@
               <span class="date">12 Jun 2019</span>
             </div>
             <div>
-              <h2>Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-              <p>Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-              <a href="#">Learn More
+              <h2 id="dannie_info[0]">Здесь вы указываете что хотите написать</h2>
+              <textarea type="text" class="size-opisania" id="text_opisania_first" [name]="dannie_info[1]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[1]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+              <a href="#">Узнать больше
                 <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
@@ -218,9 +218,9 @@
               <span class="date">12 Jun 2019</span>
             </div>
             <div>
-              <h2>Meditation bushwick direct trade taxidermy shaman</h2>
-              <p>Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-              <a href="#">Learn More
+              <h2 id="dannie_info[2]">Здесь вы указываете что хотите написать</h2>
+              <textarea type="text" class="size-opisania" id="text_opisania_second" [name]="dannie_info[3]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[3]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+              <a href="#">Узнать больше
                 <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
@@ -234,9 +234,9 @@
               <span class="date">12 Jun 2019</span>
             </div>
             <div>
-              <h2>Woke master cleanse drinking vinegar salvia</h2>
-              <p>Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-              <a href="#">Learn More
+              <h2 id="dannie_info[4]">Здесь вы указываете что хотите написать</h2>
+              <textarea type="text" class="size-opisania" id="text_opisania_third" [name]="dannie_info[4]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[4]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+              <a href="#">Узнать больше<
                 <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
@@ -245,13 +245,6 @@
             </div>
           </div>
         </div>
-        <form class="polia_dannix">
-          <textarea type="text" class="size-opisania" id="text_opisania_first" [name]="dannie_info[0]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[0]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
-          <textarea type="text" class="size-opisania" id="text_opisania_second" [name]="dannie_info[1]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[1]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
-          <textarea type="text" class="size-opisania" id="text_opisania_third" [name]="dannie_info[2]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[2]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
-          <textarea type="text" class="size-opisania" id="text_opisania_fourth" [name]="dannie_info[3]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[3]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
-          <textarea type="text" class="size-opisania" id="text_opisania_fifth" [name]="dannie_info[4]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[4]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
-        </form>
       </div>
     </div>
     <script>
@@ -261,32 +254,6 @@
     </script>
   </div>
 </div>
-
-<div id="geo_location">
-  <div class="granish">
-    <header>
-      <button class="round-button red" onclick="changeBackgroundColor('red')"></button>
-      <button class="round-button blue" onclick="changeBackgroundColor('blue')"></button>
-      <button class="round-button green" onclick="changeBackgroundColor('green')"></button>
-      <button class="round-button orange" onclick="changeBackgroundColor('orange')"></button>
-      <button class="round-button yellow" onclick="changeBackgroundColor('yellow')"></button>
-      <button class="round-button greenyellow" onclick="changeBackgroundColor('greenyellow')"></button>
-      <nav class="header-nav"></nav>
-    </header>
-    <div id="content" [ngStyle]="{'background-color': backgroundColor}">
-      <div class="granish">
-        <input type="text" placeholder="Имя"[(ngModel)]="zakluchenie[1]" [ngClass]="ChangeColor_compation + '-field'">
-        <input type="text" placeholder="Фамилия"[(ngModel)]="zakluchenie[2]" [ngClass]="ChangeColor_compation + '-field'">
-        <input type="text" placeholder="Адрес"[(ngModel)]="zakluchenie[3]" [ngClass]="ChangeColor_compation + '-field'">
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-  function changeBackgroundColor(color) {
-    document.getElementById('content').style.backgroundColor = color;
-  }
-</script>
 
 <div id="companion">
   <div class ="granish">
@@ -300,36 +267,42 @@
     </nav>
     </header>
     <div id="content" [ngStyle]="{'background-color': backgroundColor}">
-      <div class="polia_dannix">
-          <div class="flex-container">
-            <form class="polia_dannix">
-            </form>
-            <div>
-              <input type="text" class="item-text" id="text_okonchania_first" [name]="zakluchenie[1]" placeholder="1.2K" [(ngModel)]="zakluchenie[1]" [ngClass]="ChangeColor_compation + '-field'">
-              <p class="category-text">Количество пользователей</p>
+    </div>
+    <section class="contact-section">
+      <div style="align-items: center">
+        <div class="contact-header">
+          <h1>Связь с нами</h1>
+          <p>Если у вас есть предложения для сотружничества то укажите ниже</p>
+        </div>
+        <form class="contact-form">
+          <div style="display: flex; flex-direction: row;">
+            <div class="form-group" style="margin-right: 2.5rem">
+              <label for="name">Ваше Имя</label>
+              <input type="text" id="name" name="name" required>
             </div>
+            <div class="form-group">
+              <label for="email">Наша почта</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Сообщение</label>
+            <textarea type="text" class="size-opisania" id="text_opisania_78" [name]="dannie_info[1]" placeholder="Введите описание страницы" [(ngModel)]="dannie_info[1]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+        <div style="display: flex; flex-direction: row;">
+          <div class="form-group" style="margin-right: 2.5rem">
+            <label for="name">Наши контакты:</label><br>
+            <label for="name">{{ dannie_info[0]}}</label>
+            <label for="name">{{ dannie_info[1]}}</label>
+            <label for="name">{{ dannie_info[0]}}</label>
+            <label for="name">{{ dannie_info[0]}}</label>
 
           </div>
-          <div class="flex-container">
-            <div>
-              <input type="text" class="item-text" id="text_okonchania_second" [name]="zakluchenie[2]" placeholder="1.8K" [(ngModel)]="zakluchenie[2]" [ngClass]="ChangeColor_compation + '-field'">
-              <p class="category-text">Подписки</p>
-            </div>
-          </div>
-          <div class="flex-container">
-            <div>
-              <input type="text" class="item-text" id="text_okonchania_third" [name]="zakluchenie[3]" placeholder="2.3K" [(ngModel)]="zakluchenie[3]" [ngClass]="ChangeColor_compation + '-field'">
-              <p class="category-text">Загрузки</p>
-            </div>
-          </div>
-          <div class="flex-container">
-            <div>
-              <input type="text" class="item-text" id="text_okonchania_fourth" [name]="geo_location[1]" placeholder="2.1" [(ngModel)]="geo_location[1]" [ngClass]="ChangeColor_compation + '-field'">
-              <p class="category-text">Предметы</p>
-            </div>
-          </div>
+        </div>
       </div>
-    </div>
+    </section>
     <script>
       function changeBackgroundColor(color) {
         document.getElementById('content').style.backgroundColor = color;
