@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet/less" type="text/css" href="styles.less">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.min.js"></script>
+</head>
+<body>
+<div class="left-field">
+  <button class="main-page-button" (click)="scrollTo('str_uslovi')">Выбор размеров</button>
+  <button class="main-page-button"(click)="scrollTo('osnov_str')">Основная страница</button>
+  <button class="main-page-button"(click)="scrollTo('str_dannix')">Страница информации</button>
+  <button class="main-page-button"(click)="scrollTo('companion')">Заключительная страница</button>
+</div>
+
+
+<div id="str_uslovi">
+  <div class ="granish">
+    <div id="content1" [ngStyle]="{'background-color': backgroundColor}">
+      <div class = "nazvanie_okna_vibora">
+        <div>Выбор размеров страницы</div>
+      </div>
+      <div class="selecting-screen-sizes">
+        <div id="blog-1">
+          <div class="blog">
+          <div>
+            <img src="https://dummyimage.com/1920x1080" alt="blog">
+            <div>
+              <h2>Категории</h2>
+              <h1>The Catalyzer</h1>
+              <p>Здесь вы можете выбрать размеры своего прототипа</p>
+              <div>
+                <a href="#">Learn More</a>
+                <div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 16 16" height="16" width="16">
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M7.5 9.375a1.875 1.875 0 1 0 0 -3.75 1.875 1.875 0 0 0 0 3.75Z" stroke-width="1"></path>
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M7.5 2.25C3 2.25 0.75 7.5 0.75 7.5S3 12.75 7.5 12.75 14.25 7.5 14.25 7.5 12 2.25 7.5 2.25Z" stroke-width="1"></path>
+                    </svg>
+                    <span>1.2K |</span>
+                  </div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 16 16" height="16" width="16">
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M4.386 5.9430000000000005h6.228" stroke-width="1"></path>
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M4.386 9.057h4.151999999999999" stroke-width="1"></path>
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M7.503 0.75a6.7604999999999995 6.7604999999999995 0 0 0 -5.97 3.5925000000000002 6.726 6.726 0 0 0 0.3975 6.9465L0.753 14.25l3.1500000000000004 -1.0619999999999998a6.759 6.759 0 0 0 10.08 -3.8325000000000005 6.723000000000001 6.723000000000001 0 0 0 -1.089 -5.916A6.747 6.747 0 0 0 7.503 0.75v0Z" stroke-width="1"></path>
+                    </svg>
+                    <span>6</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="blog-2">
+          <div class="blog">
+          <div>
+            <img src="https://dummyimage.com/1366x768" alt="blog">
+            <div>
+              <h2>Категории</h2>
+              <h1>The Catalyzer</h1>
+              <p>Здесь вы можете выбрать размеры своего прототипа</p>
+              <div>
+                <a href="#">Learn More</a>
+                <div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 16 16" height="16" width="16">
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M7.5 9.375a1.875 1.875 0 1 0 0 -3.75 1.875 1.875 0 0 0 0 3.75Z" stroke-width="1"></path>
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M7.5 2.25C3 2.25 0.75 7.5 0.75 7.5S3 12.75 7.5 12.75 14.25 7.5 14.25 7.5 12 2.25 7.5 2.25Z" stroke-width="1"></path>
+                    </svg>
+                    <span>1.2K |</span>
+                  </div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 16 16" height="16" width="16">
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M4.386 5.9430000000000005h6.228" stroke-width="1"></path>
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M4.386 9.057h4.151999999999999" stroke-width="1"></path>
+                      <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M7.503 0.75a6.7604999999999995 6.7604999999999995 0 0 0 -5.97 3.5925000000000002 6.726 6.726 0 0 0 0.3975 6.9465L0.753 14.25l3.1500000000000004 -1.0619999999999998a6.759 6.759 0 0 0 10.08 -3.8325000000000005 6.723000000000001 6.723000000000001 0 0 0 -1.089 -5.916A6.747 6.747 0 0 0 7.503 0.75v0Z" stroke-width="1"></path>
+                    </svg>
+                    <span>6</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class = "podkluch_dannie">
+        <button (click)="downloadExcelFile()">Загрузить шаблон</button>
+        <input type="file" (change)="replaceExcelFile($event)" accept=".xlsx, .xls">
+        <button id="replaceFileButton">Ок</button>
+      </div>
+      <section id="size_okna"></section>
+      <section id="contact"></section>
+      <div>
+      </div>
+    </div>
+    <script>
+      function changeBackgroundColor(color) {
+        document.getElementById('content').style.backgroundColor = color;
+      }
+    </script>
+  </div>
+</div>
+
+<div id="osnov_str">
+<div class ="granish">
+  <header>
+    <button class="round-button red" (click)="changeInputColor_dannie('red')"></button>
+    <button class="round-button blue" (click)="changeInputColor_dannie('blue')"></button>
+    <button class="round-button green" (click)="changeInputColor_dannie('green')"></button>
+    <button class="round-button orange" (click)="changeInputColor_dannie('orange')"></button>
+    <button class="round-button yellow" (click)="changeInputColor_dannie('yellow')"></button>
+    <button class="round-button greenyellow" (click)="changeInputColor_dannie('greenyellow')"></button><nav class="header-nav">
+  </nav>
+  </header>
+  <div id="content" [ngStyle]="{'background-color': backgroundColor}">
+    <body>
+      <form class="polia_danni">
+        <div class="container" style="display: flex;">
+          <div class="blog-item" style="flex: 1; margin-right: 20px;">
+            <section class="blog-item">
+            <div class="blog-content">
+              <textarea type="text" class="category" id="osnov_category_first" [name]="dannie_info[0]" placeholder="Категории" [(ngModel)]="dannie_info[0]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+              <textarea type="text" class="category" id="osnov_category_second" [name]="dannie_info[1]" placeholder="Описание" [(ngModel)]="dannie_info[1]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+              <textarea type="text" class="category" id="osnov_category_third" [name]="dannie_info[2]" placeholder="" [(ngModel)]="dannie_info[2]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+              <div class="stats">
+                <div class="likes">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 20 20" stroke="currentColor">
+                    <path d="M11 0H3C1.89543 0 1 0.895431 1 2V12C1 13.1046 1.89543 14 3 14H11L17 20V2C17 0.895431 16.1046 0 15 0H11Z"></path>
+                  </svg>
+                  <span><textarea type="text" class="category" id="osnov_category_thirst" [name]="dannie_info[3]" placeholder="Количество" [(ngModel)]="dannie_info[3]" [ngClass]="ChangeColor_dannie + '-field'"></textarea></span>
+                </div>
+              </div>
+            </div>
+            </section>
+          </div>
+          <div class="blog-item" style="flex: 1;margin-right: 20px;">
+          <section class="blog-item">
+            <div class="blog-content">
+              <textarea type="text" class="category" id="osnov_category_1" [name]="dannie_info[4]" placeholder="Категории" [(ngModel)]="dannie_info[4]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+              <textarea type="text" class="category" id="osnov_category_2" [name]="dannie_info[5]" placeholder="Описание" [(ngModel)]="dannie_info[5]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+              <textarea type="text" class="category" id="osnov_category_3" [name]="dannie_info[6]" placeholder="" [(ngModel)]="dannie_info[6]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+              <div class="stats">
+                <div class="likes">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 20 20" stroke="currentColor">
+                    <path d="M11 0H3C1.89543 0 1 0.895431 1 2V12C1 13.1046 1.89543 14 3 14H11L17 20V2C17 0.895431 16.1046 0 15 0H11Z"></path>
+                  </svg>
+                  <span><textarea type="text" class="category" id="osnov_category_4" [name]="dannie_info[7]" placeholder="Количество" [(ngModel)]="dannie_info[7]" [ngClass]="ChangeColor_dannie + '-field'"></textarea></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+          <div class="blog-item" style="flex: 1;margin-bottom: 10px;">
+            <section class="blog-item">
+              <div class="blog-content">
+                <textarea type="text" class="category" id="osnov_category_5" [name]="dannie_info[8]" placeholder="Категории" [(ngModel)]="dannie_info[8]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+                <textarea type="text" class="category" id="osnov_category_6" [name]="dannie_info[9]" placeholder="Описание" [(ngModel)]="dannie_info[9]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+                <textarea type="text" class="category" id="osnov_category_7" [name]="dannie_info[10]" placeholder="" [(ngModel)]="dannie_info[10]" [ngClass]="ChangeColor_dannie + '-field'"></textarea>
+                <div class="stats">
+                  <div class="likes">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 20 20" stroke="currentColor">
+                      <path d="M11 0H3C1.89543 0 1 0.895431 1 2V12C1 13.1046 1.89543 14 3 14H11L17 20V2C17 0.895431 16.1046 0 15 0H11Z"></path>
+                    </svg>
+                    <span><textarea type="text" class="category" id="osnov_category_8" [name]="dannie_info[11]" placeholder="Количество" [(ngModel)]="dannie_info[11]" [ngClass]="ChangeColor_dannie + '-field'"></textarea></span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </form>
+    </body>
+  </div>
+  <script>
+    function changeBackgroundColor(color) {
+      document.getElementById('content').style.backgroundColor = color;
+    }
+  </script>
+</div>
+</div>
+
+<div id="str_dannix">
+  <div class ="granish">
+    <header>
+      <button class="round-button red" (click)="changeInputColor_geo_location('red')"></button>
+      <button class="round-button blue" (click)="changeInputColor_geo_location('blue')"></button>
+      <button class="round-button green" (click)="changeInputColor_geo_location('green')"></button>
+      <button class="round-button orange" (click)="changeInputColor_geo_location('orange')"></button>
+      <button class="round-button yellow" (click)="changeInputColor_geo_location('yellow')"></button>
+      <button class="round-button greenyellow" (click)="changeInputColor_geo_location('greenyellow')"></button><nav class="header-nav">
+    </nav>
+    </header>
+    <div id="content" [ngStyle]="{'background-color': backgroundColor}">
+      <div style="font-family: 'body-font', sans-serif; background-color: #f7fafa;" class="container" style="display: flex; flex-direction: row;">
+        <div class="section" style="margin-right: 20px; border: 1px solid black; padding-right: 20px;">
+          <div class="category" >
+            <span class="category">{{ChangeColor_geo_location}}</span>
+            <span class="date">12 Jun 2019</span>
+          </div>
+          <div>
+            <h2>Здесь вы указываете что хотите написать</h2>
+            <textarea type="text" class="size-opisania" id="text_opisania_first" [name]="danni_maket[0]" placeholder="Введите описание страницы" [(ngModel)]="danni_maket[0]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+            <a href="#" style="display: block; margin-top: 10px;">Узнать больше</a>
+            <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="section" style="margin-right: 20px; border: 1px solid black; padding-right: 20px;">
+          <div class="category">
+            <span class="category">{{ChangeColor_geo_location}}</span>
+            <span class="date">12 Jun 2019</span>
+          </div>
+          <div>
+            <h2>Здесь вы указываете что хотите написать</h2>
+            <textarea type="text" class="size-opisania" id="text_opisania_second" [name]="danni_maket[1]" placeholder="Введите описание страницы" [(ngModel)]="danni_maket[1]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+            <a href="#">Узнать больше
+              <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="section" style="margin-right: 20px; border: 1px solid black; padding-right: 20px;">
+          <div class="category">
+            <span class="category">{{ChangeColor_geo_location}}</span>
+            <span class="date">12 Jun 2019</span>
+          </div>
+          <div>
+            <h2>Здесь вы указываете что хотите написать</h2>
+            <textarea type="text" class="size-opisania" id="text_opisania_third" [name]="danni_maket[2]" placeholder="Введите описание страницы" [(ngModel)]="danni_maket[2]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+            <a href="#">Узнать больше
+              <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function changeBackgroundColor(color) {
+        document.getElementById('content').style.backgroundColor = color;
+      }
+    </script>
+  </div>
+</div>
+
+<div id="companion">
+  <div class ="granish">
+    <header>
+      <button class="round-button red" (click)="changeInputColor_companion('red')"></button>
+      <button class="round-button blue" (click)="changeInputColor_companion('blue')"></button>
+      <button class="round-button green" (click)="changeInputColor_companion('green')"></button>
+      <button class="round-button orange" (click)="changeInputColor_companion('orange')"></button>
+      <button class="round-button yellow" (click)="changeInputColor_companion('yellow')"></button>
+      <button class="round-button greenyellow" (click)="changeInputColor_companion('greenyellow')"></button><nav class="header-nav">
+    </nav>
+    </header>
+    <div id="content" [ngStyle]="{'background-color': backgroundColor}">
+    </div>
+    <section class="contact-section">
+      <div style="align-items: center">
+        <div class="contact-header">
+          <h1>Связь с нами</h1>
+          <p>Если у вас есть предложения для сотрудничества то укажите ниже</p>
+        </div>
+        <form class="contact-form">
+          <div style="display: flex; flex-direction: row;">
+            <div class="form-group" style="margin-right: 2.5rem">
+              <label for="name">Ваше Имя</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Наша почта</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Сообщение</label>
+            <textarea type="text" class="size-opisania" id="text_opisania_78" [name]="contact_dannie[4]" placeholder="Введите ваше предложение" [(ngModel)]="dannie_info[1]" [ngClass]="ChangeColor_geo_location + '-field'"></textarea>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+        <div style="display: flex; flex-direction: column;">
+          <div class="form-group" style="margin-right: 2.5rem">
+            <label for="name">Наши контакты:</label><br>
+            <label for="name">{{ contact_dannie[0]}}</label><br>
+            <label for="name">{{ contact_dannie[1]}}</label><br>
+            <label for="name">{{ contact_dannie[2]}}</label><br>
+            <label for="name">{{ contact_dannie[3]}}</label><br>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function changeBackgroundColor(color) {
+        document.getElementById('content').style.backgroundColor = color;
+      }
+    </script>
+  </div>
+</div>
+
+</body>
+</html>

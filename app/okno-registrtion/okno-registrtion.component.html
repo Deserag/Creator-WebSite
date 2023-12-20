@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <link rel="stylesheet" href="okno-registration.component.less">
+</head>
+<body>
+
+
+<form>
+  <nav class="header-nav">
+    <div>Аккаунт</div>
+    <div>
+      <input type="text" id="login" name="login" placeholder="Логин" [(ngModel)]="login" style="margin-bottom: 15px;" />
+    </div>
+    <div>
+      <input type="password" id="password" name="password" placeholder="Пароль" [(ngModel)]="password" style="margin-bottom: 15px;" />
+    </div>
+    <button type="submit">Войти</button>
+    <p><a href="/oknovxoda">Не помните пароль?</a></p>
+    <p><a href="">Зарегистрироваться</a></p>
+  </nav>
+</form>
+</body>
+</html>
